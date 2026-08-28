@@ -1,0 +1,140 @@
+:root {
+    --font-color: #3B2635;
+
+    --border-color: #E8C9D8;
+
+    --header-color: #FFF7FA;
+    --main-color: #F9DCE8;
+
+    --primary-color: #D86B93;
+    --primary-hover: #C6537E;
+
+    --accent-color: #F2A9C2;
+
+    --border-thickness: 1px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overscroll-behavior: none;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+    border-bottom: var(--border-thickness) solid var(--border-color);
+    height: 70px;
+    background-color: var(--header-color);
+}
+main{
+    background-color: var(--main-color);
+    display: flex;
+    height: fit-content;
+    min-height: 100dvh;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 40px;
+    gap: 10vh;
+}
+.content{
+    border: var(--border-thickness) solid var(--border-color);
+    border-radius: 10px;
+    width: 100vh;
+    height: 500px;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--header-color);
+}
+.content_title{
+   font-size: 2rem;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    border-top: var(--border-thickness) solid var(--border-color);
+    background-color: var(--header-color);
+    color: var(--font-color);
+    text-align: center
+}
+.scale_hover{
+    transition: transform 0.3s ease-in-out;
+}
+.scale_hover:hover{
+    transform: scale(1.05);
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+.logo{
+    display: flex;
+    font-size: 2rem;
+    gap: 10px;
+    color: var(--font-color);
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+.nav_buttons{
+    font-size: 2rem;
+    color: var(--font-color);
+    text-decoration: none;  
+}    
+.search-wrap {
+  padding: 1rem 2rem;
+}
+
+.search-form {
+  width: 100%;
+  max-width: 500px; /* smaller width */
+  background: var(--main-color);
+  display: flex;
+  align-items: center;
+  border: var(--border-thickness) solid var(--border-color);
+  border-radius: 60px;
+  padding: 6px 12px; /* smaller height */
+}
+
+.search-field {
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 8px 15px; /* reduced from 24px 20px */
+  font-size: 12px; /* reduced from 20px */
+  color: #1e134d;
+}
+
+.search-field::placeholder {
+  color: #6d629d;
+}
+
+.search-submit {
+  border: 0;
+  border-radius: 50%;
+  width: 30px; 
+  height: 30px; 
+  background: var(--primary-color);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.search-submit img {
+  width: 18px;
+  height: 18px;
+}
